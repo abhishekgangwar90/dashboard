@@ -1,3 +1,5 @@
+import styles from './dashboard.module.scss';
+
 export default function Dashboard(){
-  return <div> from Dashboard </div>
+  return <div className={styles.container}> from Dashboard </div>
 }
