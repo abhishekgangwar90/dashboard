@@ -1,6 +1,6 @@
-export default appConfig = {
+export const appConfig = {
   appTitle: 'Dashboard',
-  appSubTitle: 'One place solution for all problems',
+  appSubTitle: 'Simplifying your data needs',
   navigation: [
     {
       id: 1,

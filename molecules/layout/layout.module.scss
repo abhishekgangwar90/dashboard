@@ -1,5 +1,11 @@
 @import "../../styles/variables";
 
-.subtitle {
-  font-size: $font-xs;
+.content {
+  margin-top: $margin-default;
+}
+
+.navigation {
+  border-radius: 0.5rem;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
