@@ -2,11 +2,6 @@
 * Scss Variables
 */
 
-// breakpoints
-$screen-phone: 426px;
-$screen-tab: 769px;
-$screen-laptop: 1025px;
-
 //colors
 $color-primary: rgba(0, 115, 177, 1);
 $color-secondary: rgba(37, 36, 34, 1);
@@ -25,7 +20,7 @@ $font-xl: calc(30px + 4vmin);
 $font-large: calc(20px + 4vmin);
 $font-medium: calc(18px + 3vmin);
 $font-small: calc(15px + 2vmin);
-$font-xs: calc(14px + 1vmin);
+$font-xs: calc(8px + 1vmin);
 
 //other variables
 $padding-default: 10%;
