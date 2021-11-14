@@ -1,30 +1,27 @@
 import { Container, Row, Col, Navbar } from 'react-bootstrap';
 
-import NavBarBrand from '../../atoms/NavbarBrand';
-import NavBarActions from '../../atoms/NavbarBrand';
+import NavBar from '../NavBar';
+import SideNavigation from './../SideNavigation';
 
 import styles from './layout.module.scss';
 
+/**
+ * @export
+ * @param {*} { children }
+ * @return {*} 
+ */
 export default function Layout({ children }){
- return <>
-    <Navbar bg="light">
-      <Container fluid>
-        <Navbar.Brand>
-          <NavBarBrand/>
-        </Navbar.Brand>
-        <Navbar.Collapse className="justify-content-end">
-          Icons
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    <Container fluid className="u-margin-small">
-      <Row>
-        <Col md="2" className={`u-padding-small ${styles.navigation}`}>
-  
-        </Col>
-        <Col> {children} </Col>
-      </Row>
+ return <div className={styles.layout}>
+    {/* App Header starts from here */}
+    <NavBar/>
+    {/* Content starts from here */}
+    <Container fluid className={`u-margin-top-small ${styles.content}`}>
+        <Row className="u-height-100">
+          <Col md="2" className={`u-padding-small ${styles.navigation}`}>
+              <SideNavigation/>
+          </Col>
+          <Col> {children} </Col>
+        </Row>
     </Container>
-   
-   </>
+   </div>
 }
