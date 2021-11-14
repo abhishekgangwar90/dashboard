@@ -9,7 +9,7 @@ import NavBarActions from '../../atoms/NavbarAction';
  */
 function NavBar(){
   return <Navbar bg="light">
-      <Container fluid>
+      <Container fluid className="u-padding-left-medium u-padding-right-medium">
         <Navbar.Brand>
           <NavBarBrand/>
         </Navbar.Brand>

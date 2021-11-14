@@ -5,10 +5,33 @@ import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 
+import Notifications from './../atoms/Notifications';
+import Profile from './../atoms/Profile';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 export const appConfig = {
   appTitle: 'Dashboard',
   appSubTitle: 'Simplifying your data needs',
+  accessType: 'admin',
   navigation: [
+    {
+      id: 1,
+      content: <Notifications />,
+      accessType: 'admin',
+    },
+    {
+      id: 2,
+      content: <AccountCircleOutlinedIcon/>,
+      accessType: 'admin',
+    },
+    {
+      id: 3,
+      content: <MoreVertIcon/>,
+      accessType: 'admin',
+    },
+  ],
+  sideNavigation: [
     {
       id: 1,
       title: 'Dashboard',

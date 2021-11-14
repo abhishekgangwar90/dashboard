@@ -12,10 +12,9 @@ function NavLink({ name, icon}){
 }
 
 function SideNavigation(){
-  const accessType = 'admin';
   return <Stack gap={4} className="u-padding-small">
-    {appConfig.navigation
-      .filter(res => res.accessType === accessType)
+    {appConfig.sideNavigation
+      .filter(res => res.accessType === appConfig.accessType)
       .map((res) => {
         return <NavLink key={res.id} icon={res.icon} name={res.title} />
       })
