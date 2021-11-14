@@ -1,5 +1,5 @@
 import './../styles/main.scss';
-import Layout from '../molecules/layout'
+import Layout from '../molecules/Layout'
 
 function MyApp({ Component, pageProps }) {
   return <Layout>

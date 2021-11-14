@@ -20,7 +20,7 @@ export default function Layout({ children }){
     <Container fluid className="u-margin-small">
       <Row>
         <Col md="2" className={`u-padding-small ${styles.navigation}`}>
-
+  
         </Col>
         <Col> {children} </Col>
       </Row>
