@@ -3,6 +3,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import SettingsIcon from '@mui/icons-material/Settings';
+import HelpIcon from '@mui/icons-material/Help';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 import Notifications from './../atoms/Notifications';
@@ -11,7 +12,7 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 export const appConfig = {
-  appTitle: 'Dashboard',
+  appTitle: 'Argon',
   appSubTitle: 'Simplifying your data needs',
   accessType: 'admin',
   navigation: [
@@ -58,12 +59,18 @@ export const appConfig = {
     },
     {
       id: 5,
+      title: 'Support',
+      icon: <HelpIcon/>,
+      accessType: 'admin'
+    },
+    {
+      id: 6,
       title: 'Settings',
       icon: <SettingsIcon/>,
       accessType: 'admin'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Logout',
       icon: <LogoutIcon/>,
       accessType: 'admin'
