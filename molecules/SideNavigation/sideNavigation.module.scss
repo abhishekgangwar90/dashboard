@@ -13,10 +13,11 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
-  border-bottom: 2px solid transparent;
+  border-left: 3px solid transparent;
   cursor: pointer;
+  transition: all 0.7 ease-in;
 
   &:hover {
-    border-bottom: 2px solid burlywood;
+    border-left: 3px solid #f3a3b5;
   }
 }
