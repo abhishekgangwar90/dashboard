@@ -1,13 +1,22 @@
 .sideNav {
   height: 100%;
+  padding: 1.5rem 0;
 }
 
 .sideNav div:last-child {
   margin-top: auto;
+  border: none !important;
 }
 
 .navLink {
   display: flex;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid burlywood;
+  }
 }
