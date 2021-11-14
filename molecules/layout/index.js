@@ -15,7 +15,7 @@ export default function Layout({ children }){
     {/* App Header starts from here */}
     <NavBar/>
     {/* Content starts from here */}
-    <Container fluid className={`u-margin-top-small ${styles.content}`}>
+    <Container fluid className={`${styles.content}`}>
         <Row className="u-height-100">
           <Col md="2" className={`u-padding-small ${styles.navigation}`}>
               <SideNavigation/>
