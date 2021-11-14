@@ -1,7 +1,7 @@
 import { Container, Navbar } from 'react-bootstrap';
 
 import NavBarBrand from '../../atoms/NavbarBrand';
-import NavBarActions from '../../atoms/NavbarBrand';
+import NavBarActions from '../../atoms/NavbarAction';
 
 /**
  * Renders Application header which sticks on top
