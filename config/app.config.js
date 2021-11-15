@@ -11,6 +11,10 @@ import Profile from './../atoms/Profile';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
+import PaymentsIcon from '@mui/icons-material/Payments';
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
+import PendingActionsIcon from '@mui/icons-material/PendingActions';
+
 export const appConfig = {
   appTitle: 'Argon',
   appSubTitle: 'Simplifying your data needs',
@@ -42,8 +46,8 @@ export const appConfig = {
     },
     {
       id: 2,
-      title: 'Clients',
-      href: '/clients',
+      title: 'Members',
+      href: '/members',
       icon: <AccountCircleIcon style={{fill: '#FB6440' }}/>,
       accessType: 'admin'
     },
@@ -83,5 +87,43 @@ export const appConfig = {
       icon: <LogoutIcon style={{fill: '#FB6440' }}/>,
       accessType: 'admin'
     }
+  ],
+  dashboardConfig: [
+    {
+      id: 1,
+      widgetTitle: 'Active Members',
+      permissions: ['admin', 'l1'],
+      icon: <PaymentsIcon/>,
+      canRefresh: true,
+      data: {
+        attrValue: 320,
+        lastRefreshedAt: 'yesterday',
+        changeLastMonth: '+3',
+      }
+    },
+    {
+      id: 2,
+      widgetTitle: 'Weekly Collection',
+      permissions: ['admin'],
+      icon: <AccountBalanceWalletIcon/>,
+      canRefresh: true,
+      data: {
+        attrValue: '32,000',
+        lastRefreshedAt: 'yesterday',
+        changeLastMonth: '+3',
+      }
+    },
+    {
+      id: 3,
+      widgetTitle: 'Pending Renewals',
+      permissions: ['admin'],
+      icon: <AccountBalanceWalletIcon/>,
+      canRefresh: true,
+      data: {
+        attrValue: 320,
+        lastRefreshedAt: 'yesterday',
+        changeLastMonth: '+3',
+      }
+    },
   ]
 }

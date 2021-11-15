@@ -1,11 +1,15 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+}
+
+.dashboardHeader {
+  padding: 1rem 0;
+}
+
+.dashboardHeaderActions {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .grid {
