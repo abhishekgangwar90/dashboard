@@ -9,9 +9,9 @@
 }
 
 .grid {
-  margin-top: 1.5rem;
-  display: grid;
   height: 100%;
+  display: grid;
+  flex: 1;
   grid-template-rows: auto;
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 1.5rem;

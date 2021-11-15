@@ -20,7 +20,7 @@ export default function Layout({ children }){
           <Col lg="1" className={`u-padding-none ${styles.navigation}`}>
               <SideNavigation/>
           </Col>
-          <Col> {children} </Col>
+          <Col className="u-padding-top-small u-padding-bottom-small"> {children} </Col>
         </Row>
     </Container>
    </div>
