@@ -1,11 +1,12 @@
+@import "./../../styles/variables";
+
 .sideNav {
   height: 100%;
   padding: 1.5rem 0;
 }
 
-.sideNav div:last-child {
+.sideNav a:last-child {
   margin-top: auto;
-  border: none !important;
 }
 
 .navLink {
@@ -15,9 +16,17 @@
   padding-left: 2rem;
   border-left: 3px solid transparent;
   cursor: pointer;
-  transition: all 0.7 ease-in;
+  color: $color-text-light;
+  text-decoration: none;
+  transition: all 0.4s ease-in;
 
   &:hover {
     border-left: 3px solid #f3a3b5;
+    background-color: rgba(243, 163, 181, 0.2);
+    color: $color-text-dark;
+  }
+
+  & .navText {
+    margin-top: 0.1rem;
   }
 }

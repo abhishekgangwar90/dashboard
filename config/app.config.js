@@ -36,42 +36,50 @@ export const appConfig = {
     {
       id: 1,
       title: 'Dashboard',
+      href: '/dashboard',
       icon: <DashboardIcon style={{fill: '#5E72E4'}}/>,
       accessType: 'admin',
     },
     {
       id: 2,
       title: 'Clients',
+      href: '/clients',
       icon: <AccountCircleIcon style={{fill: '#FB6440' }}/>,
       accessType: 'admin'
     },
     {
       id: 3,
       title: 'Staff',
+      href: 'dashboard',
+      href: '/staff',
       icon: <PeopleAltIcon style={{fill: '#0ECDEF' }}/>,
       accessType: 'admin'
     },
     {
       id: 4,
       title: 'Financial',
+      href: '/financials',
       icon: <LocalAtmIcon style={{fill: '#2DCE89' }}/>,
       accessType: 'admin'
     },
     {
       id: 5,
       title: 'Support',
+      href: '/support',
       icon: <HelpIcon style={{fill: '#0ECDEF' }}/>,
       accessType: 'admin'
     },
     {
       id: 6,
       title: 'Settings',
+      href: '/settings',
       icon: <SettingsIcon style={{fill: '#666666' }}/>,
       accessType: 'admin'
     },
     {
       id: 7,
       title: 'Logout',
+      href:'',
       icon: <LogoutIcon style={{fill: '#FB6440' }}/>,
       accessType: 'admin'
     }

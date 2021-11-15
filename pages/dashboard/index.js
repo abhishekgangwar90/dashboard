@@ -5,15 +5,14 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 export default function Dashboard(){
-  return <Container fluid>
-      <Row>
-    <Col>1 of 1</Col>
-  </Row>
-  <Row>
-    <Col>1 of 3</Col>
-    <Col>2 of 3</Col>
-    <Col>3 of 3</Col>
-  </Row>
-  <Button variant="primary">Primary</Button>
-     </Container>
+  return <main className={styles.grid}>
+      <section className={styles.sectionSmall}>1</section>
+      <section  className={styles.sectionSmall}>2</section>
+      <section  className={styles.sectionSmall}>3</section>
+      <section  className={styles.sectionSmall}>4</section>
+      <section  className={styles.sectionLarge}>5</section>
+      <section  className={styles.sectionChart}>6</section>
+      <section className={styles.sectionChart}>7</section>
+      <section className={styles.sectionSmall}>8</section>
+     </main>
 }
