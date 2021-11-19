@@ -6,7 +6,7 @@ import styles from './informationCard.module.scss';
 function InformationCard({title, subTitle, icon, info}){
   return <div className={styles.cardContainer}>
     <Row>
-      <Col md="7">
+      <Col md="9">
         <Row>
           <Col className={styles.title}>{title}</Col>
         </Row>
@@ -18,7 +18,7 @@ function InformationCard({title, subTitle, icon, info}){
         {icon}
       </Col>
     </Row>
-    <Row>
+    <Row className={`${styles.footer}`}>
       <Col md="9"> {info}</Col>
       <Col>icon</Col>
     </Row>
