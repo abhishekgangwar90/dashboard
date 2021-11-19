@@ -12,7 +12,7 @@ import styles from './layout.module.scss';
  */
 export default function Layout({ children }){
 
-  const isCompactLayout = appConfig.isLayoutCompact;
+  const isCompactLayout = true;
 
  return <div className={styles.layout}>
     {/* App Header starts from here */}
