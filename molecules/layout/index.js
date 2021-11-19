@@ -12,9 +12,9 @@ import styles from './layout.module.scss';
  */
 export default function Layout({ children }){
 
-  const isCompactLayout = true;
+  const isCompactLayout = appConfig.isLayoutCompact;
 
- return <div className={styles.layout}>
+ return <div className={`${styles.layout}  ${!isCompactLayout && styles.layoutDefault}`}>
     {/* App Header starts from here */}
     <NavBar/>
 

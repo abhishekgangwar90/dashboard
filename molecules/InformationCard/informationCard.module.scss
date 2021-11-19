@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.cardContainer {
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+
+  & .title {
+    color: $color-text-light;
+    font-size: $font-xxs;
+  }
+
+  & .subTitle {
+    color: $color-text-dark;
+    font-size: $font-small;
+    font-weight: 600;
+  }
+
+  & .icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

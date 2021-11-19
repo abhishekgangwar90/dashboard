@@ -3,13 +3,14 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import RefreshIcon from '@mui/icons-material/Refresh';
+import HomeIcon from '@mui/icons-material/Home';
 
 import styles from './dashboard.module.scss';
 
 function DashboardHeader(){
   return <Row className={styles.dashboardHeader}>
         <Col>
-          <h4>Dashboard</h4>
+          <h5> <HomeIcon/> Dashboard</h5>
         </Col>
         <Col className={styles.dashboardHeaderActions}>
           <Button size="sm"><RefreshIcon/> Refresh</Button>

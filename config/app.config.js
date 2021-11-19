@@ -15,12 +15,13 @@ import PaymentsIcon from '@mui/icons-material/Payments';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import PendingActionsIcon from '@mui/icons-material/PendingActions';
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 export const appConfig = {
   appTitle: 'Argon',
   appSubTitle: 'Simplifying your data needs',
   accessType: 'admin',
-  isLayoutCompact: true,
+  isLayoutCompact: false,
   navigation: [
     {
       id: 1,
@@ -95,9 +96,10 @@ export const appConfig = {
       id: 1,
       title: 'Active Members',
       permissions: ['admin', 'l1'],
-      icon: <PaymentsIcon/>,
+      icon: <PaymentsIcon fontSize="large" style={{fill: '#5E72E4'}} />,
       canRefresh: true,
       attrValue: '320',
+      subText: '3.43% in Last Week',
       lastRefreshedAt: 'yesterday',
       filters: []
     },
@@ -105,18 +107,27 @@ export const appConfig = {
       id: 2,
       title: 'Weekly Collection',
       permissions: ['admin'],
-      icon: <AccountBalanceWalletIcon/>,
+      icon: <AccountBalanceWalletIcon fontSize="large" style={{fill: '#2DCE89'}}/>,
       canRefresh: true,
       attrValue: '3,20,000',
       filters: []
     },
-    pendingRenewals: {
+    upComingRenewals: {
       id: 3,
-      title: 'Pending Renewals',
+      title: 'Upcoming Renewals',
       permissions: ['admin', 'l1'],
-      icon: <PendingActionsIcon/>,
+      icon: <PendingActionsIcon fontSize="large" style={{fill: '#FB6440'}}/>,
       canRefresh: true,
       attrValue: '3,20,000',
+      filters: []
+    },
+    totalVisits: {
+      id: 4,
+      title: 'Total Visits',
+      permission: ['admin', 'l1'],
+      icon: <EmojiPeopleIcon fontSize="large" style={{fill: '#0ECDEF'}} />,
+      canRefresh: true,
+      attrValue: '43',
       filters: []
     }
   }

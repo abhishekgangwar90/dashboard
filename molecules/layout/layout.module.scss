@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
   transition: all 0.4s ease-out;
+
+  &Default {
+    background: linear-gradient(180deg, #5e72e4 40%, #f2f2f2 40%);
+  }
 }
 
 .container {
@@ -13,17 +17,17 @@
   transition: all 0.4s ease-out;
 
   & .nav {
-    --bs-bg-opacity: 1;
-    background-color: rgba(
-      var(--bs-light-rgb),
-      var(--bs-bg-opacity)
-    ) !important;
     transition: all 0.4s ease-out;
 
     &Default {
       width: 15%;
       margin: 1rem;
       border-radius: 0.5rem;
+      --bs-bg-opacity: 1;
+      background-color: rgba(
+        var(--bs-light-rgb),
+        var(--bs-bg-opacity)
+      ) !important;
     }
 
     &Compact {
@@ -37,10 +41,12 @@
 
   & .content {
     width: 100%;
-    margin: 1rem;
+    padding: 1rem;
+    background-color: #f3f3f3;
 
     &Default {
-      margin: 1rem;
+      padding: 1rem;
+      background-color: inherit;
     }
   }
 }
