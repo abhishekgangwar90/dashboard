@@ -16,7 +16,7 @@ function NavLink({ name, href, icon, isCompactLayout}){
 }
 
 function SideNavigation({ isCompactLayout }){
-  return <Stack gap={4} className={`${styles.sideNav}`}>
+  return <Stack gap={4} className={`${styles.sideNav} ${isCompactLayout && styles.sideNavCompact}`}>
     {appConfig.sideNavigation
       .filter(res => res.accessType === appConfig.accessType)
       .map((res) => {

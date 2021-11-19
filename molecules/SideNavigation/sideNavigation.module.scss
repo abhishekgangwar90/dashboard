@@ -3,13 +3,17 @@
 .sideNav {
   height: 100%;
   padding: 1.5rem 0;
+  margin: 1rem;
 
   & a:last-child {
     margin-top: auto;
   }
 
-  &:not(:hover) > .navLink > .navText {
-    display: none;
+  &Compact {
+    margin: 0;
+    &:not(:hover) > .navLink > .navText {
+      display: none;
+    }
   }
 
   .navLink {
@@ -31,7 +35,6 @@
 
     & .navText {
       margin-top: 0.1rem;
-      transition: all 0.4s ease-in;
     }
   }
 }

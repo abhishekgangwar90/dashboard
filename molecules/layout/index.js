@@ -12,18 +12,18 @@ import styles from './layout.module.scss';
  */
 export default function Layout({ children }){
 
-  const compactLayout = appConfig.isLayoutCompact;
+  const isCompactLayout = appConfig.isLayoutCompact;
 
  return <div className={styles.layout}>
     {/* App Header starts from here */}
     <NavBar/>
-    
+
     {/* Content starts from here */}
     <div className={styles.container}>
-        <nav className={styles.nav}>
-          <SideNavigation isCompactLayout={compactLayout}/>
+        <nav className={`${styles.nav} ${isCompactLayout ? styles.navCompact : styles.navDefault}`}>
+          <SideNavigation isCompactLayout={isCompactLayout}/>
         </nav>
-        <main className={styles.content}>
+        <main className={`${styles.content} ${isCompactLayout ? styles.contentCompact : styles.contentDefault}`}>
           {children}
         </main>
     </div>
