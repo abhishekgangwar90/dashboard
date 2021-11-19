@@ -3,30 +3,35 @@
 .sideNav {
   height: 100%;
   padding: 1.5rem 0;
-}
 
-.sideNav a:last-child {
-  margin-top: auto;
-}
-
-.navLink {
-  display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 2rem;
-  border-left: 3px solid transparent;
-  cursor: pointer;
-  color: $color-text-light;
-  text-decoration: none;
-  transition: all 0.4s ease-in;
-
-  &:hover {
-    border-left: 3px solid #f3a3b5;
-    background-color: rgba(243, 163, 181, 0.2);
-    color: $color-text-dark;
+  & a:last-child {
+    margin-top: auto;
   }
 
-  & .navText {
-    margin-top: 0.1rem;
+  &:not(:hover) > .navLink > .navText {
+    display: none;
+  }
+
+  .navLink {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    color: $color-text-light;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+
+    &:hover {
+      border-left: 3px solid #f3a3b5;
+      background-color: rgba(243, 163, 181, 0.2);
+      color: $color-text-dark;
+    }
+
+    & .navText {
+      margin-top: 0.1rem;
+      transition: all 0.4s ease-in;
+    }
   }
 }

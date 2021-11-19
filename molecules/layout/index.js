@@ -2,7 +2,7 @@ import { Container, Row, Col, Navbar } from 'react-bootstrap';
 
 import NavBar from '../NavBar';
 import SideNavigation from './../SideNavigation';
-
+import { appConfig } from '../../config/app.config';
 import styles from './layout.module.scss';
 
 /**
@@ -11,17 +11,21 @@ import styles from './layout.module.scss';
  * @return {*} 
  */
 export default function Layout({ children }){
+
+  const compactLayout = appConfig.isLayoutCompact;
+
  return <div className={styles.layout}>
     {/* App Header starts from here */}
     <NavBar/>
+    
     {/* Content starts from here */}
-    <Container fluid className={`${styles.content}`}>
-        <Row className="u-height-100">
-          <Col lg="1" className={`u-padding-none ${styles.navigation}`}>
-              <SideNavigation/>
-          </Col>
-          <Col className="u-padding-top-small u-padding-bottom-small"> {children} </Col>
-        </Row>
-    </Container>
+    <div className={styles.container}>
+        <nav className={styles.nav}>
+          <SideNavigation isCompactLayout={compactLayout}/>
+        </nav>
+        <main className={styles.content}>
+          {children}
+        </main>
+    </div>
    </div>
 }

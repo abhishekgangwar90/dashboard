@@ -14,11 +14,13 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import PaymentsIcon from '@mui/icons-material/Payments';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import PendingActionsIcon from '@mui/icons-material/PendingActions';
+import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 
 export const appConfig = {
   appTitle: 'Argon',
   appSubTitle: 'Simplifying your data needs',
   accessType: 'admin',
+  isLayoutCompact: true,
   navigation: [
     {
       id: 1,
@@ -88,42 +90,34 @@ export const appConfig = {
       accessType: 'admin'
     }
   ],
-  dashboardConfig: [
-    {
+  dashboardConfig:{
+    activeMembers: {
       id: 1,
-      widgetTitle: 'Active Members',
+      title: 'Active Members',
       permissions: ['admin', 'l1'],
       icon: <PaymentsIcon/>,
       canRefresh: true,
-      data: {
-        attrValue: 320,
-        lastRefreshedAt: 'yesterday',
-        changeLastMonth: '+3',
-      }
+      attrValue: '320',
+      lastRefreshedAt: 'yesterday',
+      filters: []
     },
-    {
+    weeklyCollection: {
       id: 2,
-      widgetTitle: 'Weekly Collection',
+      title: 'Weekly Collection',
       permissions: ['admin'],
       icon: <AccountBalanceWalletIcon/>,
       canRefresh: true,
-      data: {
-        attrValue: '32,000',
-        lastRefreshedAt: 'yesterday',
-        changeLastMonth: '+3',
-      }
+      attrValue: '3,20,000',
+      filters: []
     },
-    {
+    pendingRenewals: {
       id: 3,
-      widgetTitle: 'Pending Renewals',
-      permissions: ['admin'],
-      icon: <AccountBalanceWalletIcon/>,
+      title: 'Pending Renewals',
+      permissions: ['admin', 'l1'],
+      icon: <PendingActionsIcon/>,
       canRefresh: true,
-      data: {
-        attrValue: 320,
-        lastRefreshedAt: 'yesterday',
-        changeLastMonth: '+3',
-      }
-    },
-  ]
+      attrValue: '3,20,000',
+      filters: []
+    }
+  }
 }

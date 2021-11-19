@@ -6,17 +6,25 @@
   flex-direction: column;
 }
 
-.content {
-  flex: 1;
-  -webkit-flex: 1 1;
+.container {
   display: flex;
-  flex-direction: column;
-}
+  height: 100%;
 
-.navigation {
-  width: 14% !important;
-  margin: 1rem;
-  border-radius: 0.5rem;
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  & .nav {
+    width: 6%;
+    --bs-bg-opacity: 1;
+    background-color: rgba(
+      var(--bs-light-rgb),
+      var(--bs-bg-opacity)
+    ) !important;
+    transition: all 0.4s ease-out;
+
+    &:hover {
+      width: 14%;
+    }
+  }
+
+  & .content {
+    width: 100%;
+  }
 }
